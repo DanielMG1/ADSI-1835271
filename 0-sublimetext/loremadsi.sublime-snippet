@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+ADSI 1235271, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero nisi tempora est odit facilis ratione blanditiis pariatur, impedit itaque placeat provident eius quas quaerat ea accusantium velit consequuntur recusandae maiores!
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>loremadsi</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>
