@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Canvas</title>
+</head>
+<body>
+	<h1>Canvas</h1>
+
+	<h3>Cuadrado</h3>
+	<canvas id="cuadrado"></canvas>
+
+	<h3>Rectángulo</h3>
+	<canvas id="rectangulo"></canvas>
+
+	<h3>Círculo</h3>
+	<canvas id="circulo"></canvas>
+
+	<h3>Triangulo</h3>
+	<canvas id="triangulo"></canvas>
+
+	<h3>Corazón</h3>
+	<canvas id="corazon"></canvas>
+
+	<h3>Texto</h3>
+	<canvas id="texto"></canvas>
+
+	<script>
+		var cuadrado = document.getElementById("cuadrado");
+		var rectangulo = document.getElementById("rectangulo");
+		var circulo = document.getElementById("circulo");
+		var triangulo = document.getElementById("triangulo");
+		var corazon = document.getElementById("corazon");
+		var texto = document.getElementById("texto");
+
+		// Cuadrado
+		var ctx1 = cuadrado.getContext("2d");
+			ctx1.fillStyle="#a00";
+			ctx1.fillRect(0,0,100,100)
+
+		// Rectangulo
+		var ctx2 = rectangulo.getContext("2d");
+			ctx2.fillStyle="#abc";
+			ctx2.fillRect(0,0,200,100)
+
+		// Circulo
+		var ctx3 = circulo.getContext("2d");
+			ctx3.fillStyle="#aaa";
+			ctx3.beginPath();
+			ctx3.arc(60, 60, 60, 0, Math.PI*2, true);
+			ctx3.closePath();
+			ctx3.fill();
+
+		// Triangulo
+		var ctx4 = triangulo.getContext("2d");
+			ctx4.fillStyle="#0a0";
+			ctx4.beginPath();
+			ctx4.moveTo(10, 110);
+			ctx4.lineTo(110, 10);
+			ctx4.lineTo(210, 110)
+			ctx4.fill();
+
+		// Corazón
+		var ctx5 = corazon.getContext("2d");
+			ctx5.fillStyle="#00a";
+		    ctx5.beginPath();
+    		ctx5.moveTo(75, 40);
+    		ctx5.bezierCurveTo(75, 37, 70, 25, 50, 25);
+    		ctx5.bezierCurveTo(20, 25, 20, 62.5, 20, 62.5);
+    		ctx5.bezierCurveTo(20, 80, 40, 102, 75, 120);
+    		ctx5.bezierCurveTo(110, 102, 130, 80, 130, 62.5);
+    		ctx5.bezierCurveTo(130, 62.5, 130, 25, 100, 25);
+    		ctx5.bezierCurveTo(85, 25, 75, 37, 75, 40);
+    		ctx5.fill();
+
+    	//Texto
+    	var ctx6 = texto.getContext("2d");
+			ctx6.fillStyle="#aa0";
+			ctx6.font = "40px Verdana";
+			ctx6.fillText("ADSI 1835271", 0, 80);
+
+	</script>
+
+
+</body>
+</html>

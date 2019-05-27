@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Formularios</title>
+</head>
+<body>
+	<h1>Formularios</h1>
+	<form action="" method="post">
+		<fieldset>
+			<legend>Datos personales</legend>
+			<div>
+				<label for="nombre">Nombre completo:</label>
+				<input type="text" id="nombre" name="nombre">
+			</div>
+			<div>
+				<label for="clave">Contraseña:</label>
+				<input type="password" id="clave" name="clave">
+			</div>
+			<div>
+				<label for="foto">Insertar foto:</label>
+				<input type="file" id="foto" name="foto">
+			</div>
+			<div>
+				<label for="genero">Genero:</label>	
+				<select name="genero" id="genero">
+					<option value="">Seleccione el género</option>
+					<option value="F">Femenino</option>
+					<option value="M">Masculino</option>
+				</select>			
+			</div>
+			<div>
+				<label for="descripcion">Descripción</label>
+				<br>
+				<textarea name="descripcion" id="description" cols="30" rows="5"></textarea>
+			</div>
+		</fieldset>
+		<fieldset>
+			<legend>Datos SENA</legend>
+			<input type="hidden" name="centro" value="CPIC">
+			<div>
+				Seeccione uno o mas modulos
+				<br>
+				<label>
+					<input type="checkbox" name="modulo">
+					Desarrollo
+				</label>
+				<br>
+				<label>
+					<input type="checkbox" name="modulo">
+					Ambiental
+				</label>
+				<br>
+				<label>
+					<input type="checkbox" name="modulo">
+					Comunicación
+				</label>
+				<br>
+				<label>
+					<input type="checkbox" name="modulo">
+					Análisis
+				</label>
+				<br>
+				<br>				
+			</div>
+			<div>
+				Seleccione la titulación:
+				<br>
+				<label>
+					<input type="radio" name="titulacion">
+					ADSI
+				</label>
+				<br>
+				<label>
+					<input type="radio" name="titulacion">
+					Electricidad industrial
+				</label>
+				<br>
+				<label>
+					<input type="radio" name="titulacion">
+					Automotriz
+				</label>
+				<br>
+				<label>
+					<input type="radio" name="titulacion">
+					soldadura
+				</label>
+			</div>
+		</fieldset>
+		<input type="submit" value="Enviar formulario">
+		<input type="reset"	value="Limpiar formulario">
+	</form>
+	
+</body>
+</html>
