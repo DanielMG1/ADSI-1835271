@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+html(lang="en")
+head
+	meta(charset="UTF-8")
+	title Reutilizable (mixin)
+body
+	h1 Reutilizable (mixin)
+	mixin serie(name, caps)
+		li= name + ' (' + caps +') '
+	+serie('Shingeki no kyiogin', 60)
+	+serie('Samuray X', 16)
+	+serie('Dragon Ball', 3)

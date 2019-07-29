@@ -1,0 +1,17 @@
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title Js
+    body
+        h1 Javascript
+        h3#mensaje
+        
+        script.
+            var mensaje = document.getElementById('mensaje');
+            var nombre = prompt("Ingrese su nombre")
+            var fe = new Date();
+
+            mensaje.innerHTML = "Bienvenido ", nombre;
+            

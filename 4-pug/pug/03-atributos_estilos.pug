@@ -1,0 +1,17 @@
+html(lang="es")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title Atributos
+    body
+        h1(style={
+            background:"crimson",
+            color:"white",
+            padding:"20px"
+            }) Atributos ()
+        label(for="enclase")
+            span Usted esta en clase?
+            input(type="checkbox", id="enclase" checked=true)
+        - var colores = ['yellow', 'blue', 'red']
+        a(class=colores) Colombia
