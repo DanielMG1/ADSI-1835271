@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bordes (Ancho, Estilo, Color)</title>
+    <style>
+        section.box {
+            border-width: 8px;
+            border-style: solid;
+            border-color: black;
+            height: 140px;
+            width: 280px;
+        }
+
+        section.box1 {
+            /*Ancho*/
+            border-top-width: thin;
+            border-right-width: thick;
+            border-bottom-width: 10px;
+            border-left-width: 20px;
+            /*Forma Corta*/
+            border-width: thin thick 10px 20px;
+        }
+        section.box2 {
+            /*Color bordes*/
+            border-top-color: yellow;
+            border-right-color: orange;
+            border-bottom-color: blue;
+            border-left-color: aqua;
+        }
+        section.box3 {
+            border-top-style: solid;
+            border-radius: dotted;
+            border-bottom-style: dashed;
+            border-left-style: double;
+
+            /*forma corta*/
+            border-style: solid dotted dashed double;
+        }
+        section.box4 {
+            border: 20px solid crimson; 
+        }
+    </style>
+
+
+</head>
+<body>
+    <h1>Bordes (Ancho, Estilo, Color)</h1>
+    <h3>Ancho:</h3>
+    <section class="box box1"></section>
+    <h3>Color:</h3>
+    <section class="box box2"></section>
+    <h3>Estilo:</h3>
+    <section class="box box3"></section>
+    <h3>Forma corta:</h3>
+    <section class="box box4"></section>
+</body>
+</html> 

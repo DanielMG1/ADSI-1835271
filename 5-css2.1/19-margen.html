@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Margenes</title>
+    <style>
+        section.box {
+            border: 2px solid gray;
+            height: 400px;
+            /* Margenes */
+            margin-top: 20px;
+            margin-right: auto;
+            margin-bottom: 20px;
+            margin-left: auto;
+
+            /* Forma corta*/
+            margin: 20px auto;
+            width: 600px;
+        }
+        div.smallbox {
+            border: 1px dotted gray;
+            height: 120px;
+            /* Margenes*/
+            margin-top: 130px;
+            margin-left: 200px;
+            margin-right: 0;
+            margin-bottom: 0;
+
+            /* Forma corta. Siembre en sentido del reloj*/
+            margin:130px 0px 0px 200px ;
+
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Margenes</h1>
+    <section class="box">
+        <div class="smallbox"></div>
+    </section>
+</body>
+</html>
