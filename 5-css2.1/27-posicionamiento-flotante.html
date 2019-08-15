@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Posicionamiento Relativo</title>
+
+    <style>
+
+        section {
+            border: 1px solid #555;
+            padding: 10px;
+            margin: 20px auto;
+            width: 360px;
+        }
+
+        section div {
+            background-color: #fff;
+            border: 1px solid #555;
+            padding: 20px 10px;
+            width: 95px;
+        }
+
+        section div.box1 {
+            float: right;
+
+        }
+
+        section img {
+            float: left;
+
+        }
+
+        section p.clear {
+            clear: left;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <h1>Posicionamiento Relativo</h1>
+    <section>
+        <div class="box1">Caja 1</div>
+        <div class="box2">Caja 2</div>
+        <div class="box3">Caja 3</div>
+    </section>
+    <section>
+        <img src="img/arnold.jpg" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, ipsa. Ullam temporibus cum iste?</p>
+        <p class="clear">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque commodi nisi cum omnis dolore!</p>
+    </section>
+</body>
+</html>
