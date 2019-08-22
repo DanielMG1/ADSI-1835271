@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contenido Sobrante (Oberflow)</title>
+
+    <style>
+
+
+        section.overflow {
+            margin: 10px auto;
+            width: 500px;
+        }
+
+        section.overflow div {
+            border: 1px solid #999;
+            display: inline-block;
+            height: 250px;
+            padding: 10px;
+            vertical-align: top;
+            width: 140px;
+        }
+
+        section.overflow div h3 {
+            background-color: #ccc;
+            margin: 0;
+            padding: 10px;
+        }
+
+        section.overflow div.box1 { overflow: visible;}
+        section.overflow div.box2 { overflow: hidden;}
+        section.overflow div.box3 { overflow: scroll;}
+
+    </style>
+</head>
+<body>
+    <h1>Contenido sobrante (Overflow)</h1>
+    <section class="overflow">
+    <div class="box1">
+        <h3>overflow:visible</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates sunt reprehenderit et numquam. Porro ea error beatae soluta omnis perferendis quam nostrum, cupiditate ducimus placeat praesentium sequi provident, corporis obcaecati voluptatibus, animi repellat optio id cumque? Perspiciatis a magni eum culpa dolor, natus possimus corporis reiciendis labore dicta quidem necessitatibus.</p>
+    </div>
+    <div class="box2">
+        <h3>overflow:hidden</h3>
+        <p>Obcaecati eum quasi exercitationem eveniet, porro saepe sed eius laboriosam libero voluptatibus voluptatum suscipit vero! Neque saepe laboriosam ex sed rem quisquam aperiam esse doloribus corrupti? Tempora consectetur aliquam sed, esse, magni dolorem provident nam officia culpa earum sequi? Iste dolorem, doloremque quasi assumenda obcaecati libero impedit esse maiores unde.</p>
+    </div>
+    <div class="box3">
+        <h3>overflow:scroll</h3>
+        <p>Alias eius necessitatibus possimus, nesciunt quasi numquam aut itaque cum. Laudantium consectetur error qui rerum dicta at delectus aperiam animi veritatis quas vitae neque deserunt dolores, doloremque repellat corporis? Praesentium, at reiciendis odit, quis blanditiis saepe voluptatibus id nisi eligendi officia similique dignissimos obcaecati architecto veniam consectetur dolorum, suscipit itaque.</p>
+    </div>  
+    </section>
+</body>
+</html>

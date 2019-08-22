@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Eje Z (z index)</title>
+
+    <style>
+        section.boxes {
+            margin: 10px auto;
+            width: 300px;
+            position: relative;
+        }
+        
+        section.boxes div {
+            border: 4px solid #222;
+            position: absolute;
+            height: 120px;
+            width: 300px;
+            
+
+        }
+
+        section.boxes div h4 {
+            font-style: 5em;
+            font-family: arial;
+            margin: 0px;
+
+        }
+
+        section.boxes div.box1 {
+            background-color: rgb(4, 82, 34);
+            color: #fff;
+            top: 0px;
+            left: 0px;
+            z-index: 1;
+        }
+
+        section.boxes div.box2 {
+            background-color: rgb(5, 146, 59);
+            top: 50px;
+            left: 50px;
+            z-index: 2;
+        }
+
+        section.boxes div.box3 {
+            background-color: rgb(13, 243, 101);
+            top: 100px;
+            left: 100px;
+            z-index: 3;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Eje z (z index)</h1>
+    <section class="boxes">
+        <div class="box1">
+            <h4>1</h4>
+        </div>
+        <div class="box2">
+            <h4>2</h4>
+        </div>
+        <div class="box3">
+            <h4>3</h4>
+        </div>
+    </section>
+</body>
+</html>

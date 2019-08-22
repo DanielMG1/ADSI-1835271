@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tipografia (Tamaño)</title>
+    <style>
+        body {font-family: Arial;}
+        /* Absolutas */
+        ul.absolutes li:nth-child(1) { font-size: xx-small;}
+        ul.absolutes li:nth-child(2) { font-size: x-small;}
+        ul.absolutes li:nth-child(3) { font-size: small;}
+        ul.absolutes li:nth-child(4) { font-size: medium;}
+        ul.absolutes li:nth-child(5) { font-size: large;}
+        ul.absolutes li:nth-child(6) { font-size: x-large;}
+        ul.absolutes li:nth-child(7) { font-size: xx-large;}
+        /* Relativas */
+        ul.relatives li:nth-child(1) { font-size: smaller;}
+        ul.relatives li:nth-child(2) { font-size: larger;}
+        /* Medidas */
+        ul.sizes li:nth-child(1) { font-size: 16px;}
+        ul.sizes li:nth-child(2) { font-size: 2em;}
+        ul.sizes li:nth-child(3) { font-size: 1.5ex;}
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Tipografia (Tamaño)</h1>
+        <ul class="absolutes">
+            <li>xx-small</li>
+            <li>x-small</li>
+            <li>small</li>
+            <li>medium</li>
+            <li>large</li>
+            <li>x-large</li>
+            <li>xx-large</li>
+        </ul>
+        <ul class="relatives">
+            <li>smaller</li>
+            <li>larger</li>
+        </ul>
+        <ul class="sizes">
+            <li>16px</li>
+            <li>2em</li>
+            <li>1.5ex</li>
+        </ul>
+    </main>
+</body>
+</html>
