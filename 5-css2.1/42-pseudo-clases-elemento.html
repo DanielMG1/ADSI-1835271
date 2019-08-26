@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pseudo (Clases/elemento)</title>
+    <style>
+        body {
+            font: 16px arial;
+        }
+
+        nav.links{
+            margin: 10px;
+            width: 600px;
+        }
+
+        nav.links a{
+            display: inline-block;
+            width: 125px;
+        }
+        
+        nav.links a:link,
+        nav.links a:visited {
+            background-color: rgb(17, 160, 148);
+            border-bottom: 1px solid rgb(4, 66, 58);
+            color: darkgreen;
+            padding: 10px;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        nav.links a:hover {
+            background-color: rgb(4, 66, 58);
+            border-bottom: 10px solid rgb(17, 160, 148);
+            color: rgb(17, 160, 148);
+        }
+
+        nav.links a:active {
+            background-color: rgb(209, 30, 30);
+            border-bottom: 1px solid rgb(109, 7, 7);
+            color: rgb(109, 7, 7);
+        }
+
+        input.input {
+            border: 1px solid rgb(17, 160, 148);
+            outline: none;
+            padding: 10px;
+        }
+
+        input.input:focus {
+            background-color: rgb(21, 240, 221);
+            border: dotted;
+        }
+
+        p {
+            margin: 10px auto;
+            padding: 10px;
+            width: 600px;
+        }
+
+        p:first-letter {
+            color: rgb(17, 160, 148);
+            font-size: 5em;
+        }
+
+        p:first-line {
+            background-color: rgb(13, 243, 224);
+        }
+        
+        div.box {
+            background-color: rgb(17, 205, 238);
+            height: 200px;
+            width: 200px;
+        }
+
+        div.box:before {
+            background-color:yellow;
+            content: "Antes";
+            position: absolute;
+            left: 0px;
+            height: 200px;
+            width: 200px;
+
+        }
+
+        div.box::after {
+            background-color:rgb(255, 0, 119);
+            content: "Despues ";
+            position: absolute;
+            left: 210px;
+            height: 200px;
+            width: 200px;
+
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Pseudo (Clases/elemento)</h1>
+    <h4>Enlaces (link,visited,hover,active)</h4>
+    <nav class="links">
+        <a href="javascript:;">Home</a>
+        <a href="javascript:;">About Us</a>
+        <a href="javascript:;">Services</a>
+        <a href="javascript:;">Contact Us</a>
+    </nav>
+    <h4>Elemento de entrada de formulario (Focus)</h4>
+    <input type="text" class="input" placeholder="correo electrónico">
+    <h4>Primera letra/linea</h4>
+    <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident ab nam, ad cum porro aspernatur soluta? Perspiciatis aliquid a eos nam aliquam totam porro optio facilis, repudiandae est reprehenderit magni.
+    </p>
+
+    <h4>Antes y después</h4>
+    <div class="box"></div>
+</body>
+</html>

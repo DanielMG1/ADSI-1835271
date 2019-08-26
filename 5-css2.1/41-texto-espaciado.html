@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Texto (Espaciado)</title>
+    <style>
+        section.spacing {
+           margin: 10px auto;
+            width: 480px;
+        }
+        section.spacing div {
+            display: inline-block;
+            border: 1px solid blue;
+            padding: 10px;
+            vertical-align: top;
+            width: 200px;
+        }
+
+        section.spacing div.ls { letter-spacing: 0.5em;}
+        section.spacing div.ws { word-spacing: 1em;}
+        
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Texto (Espaciado)</h1>
+        <section class="spacing">
+            <div class="ls">
+                <h5>letter-spacing</h5>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi, doloremque! At esse autem optio, veniam error, architecto provident molestiae distinctio rerum facilis, voluptatum totam temporibus.
+                </p>
+                <p>
+                    Suscipit ullam vel voluptates ducimus. 
+                </p>
+            </div>
+            <div class="ws">
+                <h5>word-spacing</h5>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi, doloremque! At esse autem optio, veniam error, architecto provident molestiae distinctio rerum facilis, voluptatum totam temporibus.
+                </p>
+                <p>
+                    Suscipit ullam vel voluptates ducimus. 
+                </p> 
+            </div>
+        </section>
+
+    </main>
+</body>
+</html>

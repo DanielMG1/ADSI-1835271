@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Texto (Interlineado)</title>
+    <style>
+        section.lineheight {
+            border: 1px solid black;
+            margin: 10px auto;
+            width: 700px;
+        }
+        section.lineheight div {
+            display: inline-block;
+            border: 1px solid blue;
+            padding: 10px;
+            vertical-align: top;
+            width: 150px;
+        }
+
+        section.lineheight div.lh1 { line-height: 0.5em;}
+        section.lineheight div.lh2 { line-height: 1em;}
+        section.lineheight div.lh3 { line-height: 1.5em;}
+        
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Texto (Interlineado)</h1>
+        <section class="lineheight">
+            <div class="lh1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi, doloremque! At esse autem optio, veniam error, architecto provident molestiae distinctio rerum facilis, voluptatum totam temporibus. Suscipit ullam vel voluptates ducimus. </div>
+            <div class="lh2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi, doloremque! At esse autem optio, veniam error, architecto provident molestiae distinctio rerum facilis, voluptatum totam temporibus. Suscipit ullam vel voluptates ducimus. </div>
+            <div class="lh3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi, doloremque! At esse autem optio, veniam error, architecto provident molestiae distinctio rerum facilis, voluptatum totam temporibus. Suscipit ullam vel voluptates ducimus. </div>
+
+        </section>
+
+    </main>
+</body>
+</html>

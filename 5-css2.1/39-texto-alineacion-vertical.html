@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Texto (Alineación Vertical)</title>
+    <style>
+        section.verticalalign {
+            margin: 10px auto;
+            width: 500px;
+        }
+        
+        section.verticalalign div {
+            border: 1px solid black;
+            display: inline-block;
+            padding: 10px;
+            width: 130px;
+        }
+
+        section.verticalalign div.va1 { vertical-align: baseline;}
+        section.verticalalign div.va2 { vertical-align: top;     }
+        section.verticalalign div.va3 { vertical-align: center;  }
+
+    </style>
+
+</head>
+<body>
+    <main>
+        <h1>Texto (Alineación Vertical)</h1>
+        <section class="verticalalign">
+            <div class="va1"><img src="img/help.png" width="80">Ayuda</div>
+            <div class="va2"><img src="img/help.png" width="80">Ayuda</div>
+            <div class="va3"><img src="img/help.png" width="80">Ayuda</div>
+        </section>
+
+    </main>
+
+</body>
+</html>
