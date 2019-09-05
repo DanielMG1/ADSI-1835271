@@ -1,0 +1,30 @@
+body {
+    background-color: #328ec6;
+    color: #1d4e6f;
+    font: 16px arial;
+}
+
+main {
+    background-color: white;
+    margin: 20px auto;
+    padding: 10px;
+    width: 800px;
+}
+
+main header {
+    background-color: #133348;
+    border-bottom: 4px solid #328ec6;
+    color: white;
+    padding: 10px;
+    margin-bottom: 40px;
+}
+
+main header h1 {
+    margin: 0px;
+    text-align: center;
+}
+
+main section h3 {
+    margin: 0px;
+    text-align: center;
+}

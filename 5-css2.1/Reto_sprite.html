@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Reto Sprite</title>
+    <style>
+        body {
+            background-color: rgb(36,160,82);
+            border: 5px solid white;
+            margin: 0px;
+        }
+        #sprite1 {
+            position: relative;
+            width: 190px;
+            height: 190px;
+            background: url(img/spriteweb.png) -10px -400px ;
+            margin: 10px auto;  
+        }
+
+        nav.links{
+            width: 860px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            margin: 10px auto;
+        }
+
+        nav.links a{
+            display: inline-block;
+            width: 128px;
+            height: 30px;
+            margin:10px;
+            
+        }
+        
+        nav.links a:link,
+        nav.links a:visited {
+            background-color: rgb(7, 109, 58);
+            border-bottom: 5px solid white;
+            color: rgb(255, 255, 255);
+            padding: 10px;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        nav.links a:hover {
+            background-color: rgb(0, 0, 0);
+            border-bottom: 5px solid rgb(255, 255, 0);
+            color: rgb(255, 255, 255);
+        }
+
+        section#sp2 {
+            background-color: rgb(7, 109, 58);
+            height: 210px;
+            margin: 30px auto;
+            width: 815px;
+            padding: 10px;
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+
+        }
+        section#sp2 article {
+            border: 2px solid white;
+            display: inline-block;
+            margin: 15px;
+            width: 234px;
+            height: 175px;
+            background: url(img/spriteweb.png) -480px -10px ;
+            text-align: center;
+        
+        }
+
+        section#sp2 article h4 {
+            background-color: rgba(255, 255, 255, 0.664);
+            height: 25px;
+            margin: 0px;
+            text-align: center;
+            padding: 15px;
+        }
+
+        section#sp2 article h4:hover {
+            background-color: rgba(255, 255, 255, 0.918);
+        }
+
+        section#sp3 {
+            background-color: rgb(7, 109, 58);
+            width: 835px;
+            height: 580px;
+            margin: 30px auto;
+            padding: 1px;
+
+        }
+
+        section#sp3 article {
+            background-color: white;
+            width: 795px;
+            height: 160px;
+            margin: 10px;
+            padding: 10px;
+        }
+
+        section#sp3 article #sprite3 { 
+            width: 85px;
+            height: 90px;
+            margin: 35px;
+            background: url(img/spriteweb.png) -295px -500px ;
+            display: inline-block;
+        }
+
+        section#sp3 article #lorem {
+            width: 470px;
+            height: 150px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            line-height: 1.5em;
+            text-align: left;
+            vertical-align: 230%;
+            display: inline-block;
+        }
+
+        section#sp3 article #sprite4 { 
+            width: 130px;
+            height: 170px;
+            margin: 0px;
+            background: url(img/spriteweb.png) -60px -200px ;
+            display: inline-block;
+        }
+
+        section#sp5 {
+            background-color: white;
+            height: 260px;
+            margin: 20px auto;
+            width: 815px;
+            padding: 10px;
+
+        }
+
+        section#sp5 p {
+            width: 300px;
+            height: 190px;
+            background: url(img/spriteweb.png) -480px -416px ;
+            margin: 10px 250px;  
+            
+
+        }
+
+        section#sp5 nav.linksA{
+            width: 860px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            margin: 10px auto;
+        }
+
+        section#sp5 nav.linksA a{
+            display: inline-block;
+            width: 140px;
+            height: 30px;
+            margin: 0px;
+            
+        }
+        
+        section#sp5 nav.linksA a:link,
+        section#sp5 nav.linksA a:visited {
+            background-color: white;
+            color: rgb(0, 0, 0);
+            padding: 10px;
+            text-align: center;
+            text-decoration: none;
+
+        }
+
+        section#sp5 nav.linksA a:hover {
+            border-bottom: 5px solid  rgb(7, 109, 58);
+        }
+       
+
+
+    </style>
+</head>
+<body>
+    <p id="sprite1"></p>
+
+    <nav class="links">
+            <a href="javascript:;">INICIO</a>
+            <a href="javascript:;">NOSOTROS</a>
+            <a href="javascript:;">PORTAFOLIO</a>
+            <a href="javascript:;">SERVICIOS</a>
+            <a href="javascript:;">CONTACTO</a>
+    </nav>
+
+    <section id="sp2">
+        <article> 
+            <h4>Sprite 01</h4> 
+        </article>
+        <article> 
+            <h4>Sprite 02</h4> 
+        </article>
+        <article> 
+            <h4>Sprite 03</h4> 
+        </article>
+    </section>
+
+    <section id="sp3">
+        <article>
+            <p id="sprite3"></p>
+            <p id="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam rerum, libero quas voluptatem vel veritatis deserunt similique numquam impedit. Dolorum sequi repudiandae voluptatum ducimus cupiditate laudantium aliquam atque accusantium ut. </p>
+            <p id="sprite4"></p>
+        </article>
+        <article>
+            <p id="sprite3"></p>
+            <p id="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam rerum, libero quas voluptatem vel veritatis deserunt similique numquam impedit. Dolorum sequi repudiandae voluptatum ducimus cupiditate laudantium aliquam atque accusantium ut. </p>
+            <p id="sprite4"></p>
+            </article>
+        <article>
+            <p id="sprite3"></p>
+            <p id="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam rerum, libero quas voluptatem vel veritatis deserunt similique numquam impedit. Dolorum sequi repudiandae voluptatum ducimus cupiditate laudantium aliquam atque accusantium ut. </p>
+            <p id="sprite4"></p>
+        </article>
+    </section>
+
+    <section id="sp5">
+        <p src="" alt=""></p>
+        <nav class="linksA">
+            <a href="javascript:;">INICIO</a>
+            <a href="javascript:;">NOSOTROS</a>
+            <a href="javascript:;">PORTAFOLIO</a>
+            <a href="javascript:;">SERVICIOS</a>
+            <a href="javascript:;">CONTACTO</a>
+        </nav>
+    </section>
+
+</body>
+</html>
