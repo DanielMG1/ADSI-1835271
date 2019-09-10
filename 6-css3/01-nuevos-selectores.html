@@ -17,6 +17,38 @@
         ul.frontend li:last-of-type {
             background-color: aqua;
         }
+
+        /* li:nth-child(m) */
+        ul.databases li:nth-child(3) {
+            background-color: aqua;
+        }
+
+        /* artivcle#home:target */
+
+        article {
+            display: none;
+        }
+
+        article#home:target,
+        article#service:target,
+        article#contact:target {
+            background-color: aqua;
+            color: blue;
+            display: block;
+        }
+
+        /* ::selection */
+
+        p.yellow::selection {
+            background-color: yellow;
+        }
+        p.blue::selection {
+            background-color: blue;
+        }
+        p.red::selection {
+            background-color: red;
+        }
+
     </style>
 </head>
 <body>
@@ -42,6 +74,48 @@
                 <li>CSS</li>
                 <li>JS</li>
             </ul>
+
+            <h3>li:nth-child(n) (Seleccciona el elemento n9</h3>
+            <ul class="databases"> 
+                <li>MySQL</li>
+                <li>Maria DB</li>
+                <li>Postgres</li>
+                <li>SQL Server</li>
+                <li>Oracle</li>
+            </ul>
+
+            <h3>section#home:target (Selecciona el ancla activa)</h3>
+
+            <nav>
+                <a href="#home">Home</a>
+                <a href="#service">Service</a>
+                <a href="#contact">Contact</a>
+            </nav>
+
+            <article id="home">
+                <h4>Home</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam temporibus harum praesentium quaerat labore a tempora delectus ipsum consectetur placeat soluta eaque laudantium hic fugiat, repellendus sunt expedita deleniti necessitatibus!</p>
+            </article>
+            <article id="service">
+                <h4>Service</h4>
+                <p>Reprehenderit consequuntur autem perspiciatis qui fugiat, cum eos velit nemo ad nobis molestias. Suscipit magnam dolorem aperiam perferendis molestiae dignissimos ipsam, nam quo repellat consequatur rerum! Eius corporis eum doloribus.</p>
+            </article>
+            <article id="contact">
+                <h4>Contact</h4>
+                <p>Tempora pariatur assumenda expedita neque sit, fugit quas, quo, quaerat omnis deleniti nisi? Blanditiis neque doloremque expedita? Quidem animi eaque nostrum minus atque, accusamus velit odit quasi corrupti et. Ex?</p>
+            </article>
+
+            <h3>::selection ()</h3>
+            <p class="yellow">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut quibusdam dignissimos non labore provident explicabo, repellendus voluptate perspiciatis deleniti ipsam, suscipit laborum voluptas, illo porro odit? Provident corporis quam ipsam!
+            </p>
+            <p class="blue">
+                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut quibusdam dignissimos non labore provident explicabo, repellendus voluptate perspiciatis deleniti ipsam, suscipit laborum voluptas, illo porro odit? Provident corporis quam ipsam!
+            </p>
+            <p class="red">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut quibusdam dignissimos non labore provident explicabo, repellendus voluptate perspiciatis deleniti ipsam, suscipit laborum voluptas, illo porro odit? Provident corporis quam ipsam!
+            </p>
+            
 
         </section>
     </main>
