@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Transiciones</title>
+    <link rel="stylesheet" href="css/master.css">
+    <style>
+        div.box {
+            border: 2px solid #333;
+            height: 300px;
+            width: 200px;
+            margin: 20px auto;
+        }
+
+        div.box1 {
+            background-color: crimson;
+            transition: all 1s ease-out;
+        }
+
+        div.box1:hover {
+            width: 500px;
+            background-color: blue;
+        }
+
+        div.box2 {
+            background-color: teal;
+            transition: all 2s ease-out;
+        }
+
+        div.box2:hover {
+            transform: rotate(180deg)
+        }
+
+        div.box3 {
+            opacity: 1;
+            background-color: peru;
+            /* Con delay de medio segundo*/
+            transition: all 1s 0.5s linear;
+        }
+
+        div.box3:hover {
+            opacity: 0.5;
+            transform: scale(0.5);
+        }
+
+        div.box4 {
+            background-color:aqua;
+            transition: all 1s ease-in-out;
+        }
+
+        div.box4:hover {
+            transform: translate(200px);
+        }
+
+        div.box5 {
+            background-color: green;
+            transition: width 1s, 
+                        height 1s 1s,
+                        background 1s 2s ease-in-out;
+        }
+
+        div.box5:hover {
+            width: 400px; 
+            height: 400px;
+            background-color: blue;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Transiciones</h1>
+        </header>
+        <section>
+            <div class="box box1"></div>
+            <div class="box box2"></div>
+            <div class="box box3"></div>
+            <div class="box box4"></div>
+            <div class="box box5"></div>
+        </section>
+    </main>
+</body>
+</html>

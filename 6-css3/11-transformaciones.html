@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Transformaciones</title>
+    <link rel="stylesheet" href="css/master.css">
+    <style>
+        div.box {
+            background: url(img/flash.jpg) no-repeat center;
+            background-size: contain;
+            margin: 20px auto;
+            height: 423px;
+            width: 340px;
+
+        }
+        div.box1 { transform: translate(-200px, -10px);}
+        div.box2 { transform: rotate(90deg);}
+        div.box3 { transform: scale(.5);}
+        div.box4 { transform: skew(15deg);}
+        div.box5 { 
+            transform: rotate(45deg) scale(0.8) skew(-30deg);
+
+
+
+            }
+    </style>
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Transformaciones</h1>
+        </header>
+        <section>
+            <h3>translate(-200px, -10px)</h3>
+            <div class="box box1"></div>
+            <h3>rorate(90deg)</h3>
+            <div class="box box2"></div>
+            <h3>scale(.5)</h3>
+            <div class="box box3"></div>
+            <h3>skew(15deg)</h3>
+            <div class="box box4"></div>
+            <h3>rotate(45deg) scale(0.8) skew(-30deg)</h3>
+            <div class="box box5"></div>
+        </section>
+    </main>
+
+
+</body>
+</html>

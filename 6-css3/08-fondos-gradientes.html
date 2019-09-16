@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fondos Gradientes</title>
+    <link rel="stylesheet" href="css/master.css">
+
+    <style>
+        div.box {
+            border: 2px solid #1d1d1d;
+            height: 250px;
+            margin: 20px auto;
+            width: 400px;
+
+        }
+
+        div.box1 {
+            background: linear-gradient(to top, #d30a58, #40bb7b);
+        }
+
+        div.box2 {
+            background: linear-gradient(45deg, blue, red);
+        }
+
+        div.box3 {
+            background: linear-gradient(to bottom, yellow 40%,blue 30%, blue 70%,red 0%);
+        }
+
+        div.box4 {
+            background: linear-gradient(to right, rgb(82, 2, 82) 50%,rgb(218, 5, 218) 0%);
+            background-size: 40px 100%;
+            background-position: center;
+
+        }
+
+        div.box5 {
+            background: radial-gradient(circle, red, blue);
+        }
+
+        div.box6 {
+            background: radial-gradient(circle, white 20%, black 20%, 
+                                                black 40%, white 40%, 
+                                                white 60%, black 60%, 
+                                                black 80%, white 80%);
+
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <header>
+             <h1>Fondos Gradientes</h1>
+        </header>
+        <section>
+            <h3>linear-gradient()</h3>
+            <div class="box box1"></div>
+            <h3>linear-gradient()</h3>
+            <div class="box box2"></div>
+            <h3>linear-gradient()</h3>
+            <div class="box box3"></div>
+            <h3>linear-gradient()</h3>
+            <div class="box box4"></div>
+            <h3>radial-gradient()</h3>
+            <div class="box box5"></div>
+            <h3>linear-gradient()</h3>
+            <div class="box box6"></div>
+        </section>
+    </main>
+</body>
+</html>

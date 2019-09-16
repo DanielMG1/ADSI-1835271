@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Animaciones</title>
+    <link rel="stylesheet" href="css/master.css">
+    <style>
+        section {
+            background: url(img/garden.jpg) no-repeat center;
+            background-size: cover;
+            height: 480px;
+            margin: 20px auto;
+            width: 800px;
+            position: relative;
+        }
+
+        div.pig {
+            background: url(img/pig.png) no-repeat center;
+            margin-top: 400px;
+            height: 80px;
+            background-size: cover;
+            width: 120px;
+            position: absolute;
+            animation: aniPig 5s ease-in infinite;
+        }
+
+        @keyframes aniPig {
+            0% {
+                left: -100px;
+                transform: rotateY(0deg);
+            }
+            50% {
+                left: 600px;
+                transform: rotateY(0deg);
+                transform: scale(4);
+            }
+            51% {
+                left: 600px;
+                transform: rotateY(180deg);
+            }
+            100% {
+                left: -100px;
+                transform: rotateY(180deg);
+            }
+
+            
+        }
+        
+    </style>
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Animaciones</h1>
+        </header>
+
+        <section>
+            <div class="pig"></div>
+        </section>
+
+    </main>
+</body>
+</html>
