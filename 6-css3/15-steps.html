@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Animación (Steps)</title>
+    <link rel="stylesheet" href="css/master.css">
+    <style>
+        div.steps {
+            background: url(img/steps.png) no-repeat center left;
+            height: 509px;
+            margin: 20px auto;
+            width: 200px;
+            animation: animSteps 1.5s steps(10) infinite;
+        }
+        @keyframes animSteps {
+            100% {
+                background-position: -2000px;
+            }
+        }
+
+        div.monster {
+            background: url(img/steps2.png) no-repeat center left;
+            height: 240px;
+            margin: 20px auto;
+            width: 190px;
+            animation: animSteps2 1.5s steps(10) infinite;
+        }
+
+        @keyframes animSteps2 {
+            100% {
+                background-position: -1900px;
+            }
+        }
+
+        main section h2 {
+            margin: 50px auto;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Animación (Steps)</h1>
+        </header>
+        <section>
+            <h2>Tasa</h2>
+            <div class="steps"></div>
+        </section>
+
+        <section>
+            <h2>Monster</h2>
+            <div class="monster"></div>
+        </section>
+    </main>
+    
+</body>
+</html>
