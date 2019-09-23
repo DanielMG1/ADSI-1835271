@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Flex (Alinear Items)</title>
+    <style>
+        body{
+            font: 16px Arial;
+            color: #666;
+        }
+        h1{
+            border: 2px solid salmon;
+        }
+        ul.fruits{
+            background-color: #de9083;
+            border-radius: 4px;
+            display: flex;
+            height: 448px;
+            list-style: none;
+            padding: 0px;
+            margin: 0px 10px;
+        }
+        ul.fruits li{
+            background-color: #c9e1d3;
+            border-radius: 4px;
+            margin: 4px; 
+        }
+        ul.fruits.f1{ align-items: stretch; }
+        ul.fruits.f2{ align-items: flex-start; }
+        ul.fruits.f3{ align-items: flex-end; }
+        ul.fruits.f4{ align-items: center; }
+        ul.fruits.f5{ align-items: baseline; }
+
+    </style>
+</head>
+<body>
+    <h1>Activar align-items: stretch;</h1>
+    <ul class="fruits f1">
+        <li><img src="imgs/grapes.svg"></li>
+        <li><img src="imgs/pear.svg"></li>
+        <li><img src="imgs/orange.svg"></li>
+        <li><img src="imgs/grapes.svg"></li>
+        <li><img src="imgs/pear.svg"></li>
+        <li><img src="imgs/orange.svg"></li>          
+    </ul>
+    <h1>Activar align-items: flex-start;</h1>
+    <ul class="fruits f2">
+        <li><img src="imgs/grapes.svg"></li>
+        <li><img src="imgs/pear.svg"></li>
+        <li><img src="imgs/orange.svg"></li>
+        <li><img src="imgs/grapes.svg"></li>
+        <li><img src="imgs/pear.svg"></li>
+        <li><img src="imgs/orange.svg"></li>          
+    </ul>
+    <h1>Aactivar align-items: flex-end; </h1>
+    <ul class="fruits f3">
+        <li><img src="imgs/grapes.svg"></li>
+        <li><img src="imgs/pear.svg"></li>
+        <li><img src="imgs/orange.svg"></li>
+        <li><img src="imgs/grapes.svg"></li>
+        <li><img src="imgs/pear.svg"></li>
+        <li><img src="imgs/orange.svg"></li>          
+    </ul>
+    <h1>Activar align-items: center;</h1>
+    <ul class="fruits f4">
+        <li><img src="imgs/grapes.svg"></li>
+        <li><img src="imgs/pear.svg"></li>
+        <li><img src="imgs/orange.svg"></li>
+        <li><img src="imgs/grapes.svg"></li>
+        <li><img src="imgs/pear.svg"></li>
+        <li><img src="imgs/orange.svg"></li>          
+    </ul>
+    <h1>Activar align-items: baseline;</h1>
+
+    <ul class="fruits f5">
+        <li><img src="imgs/grapes.svg"></li>
+        <li><img src="imgs/pear.svg"></li>
+        <li><img src="imgs/orange.svg"></li>
+        <li><img src="imgs/grapes.svg"></li>
+        <li><img src="imgs/pear.svg" width="400px"></li>
+        <li><img src="imgs/orange.svg"></li>          
+    </ul>
+</body>
+</html>

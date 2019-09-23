@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Parallax</title>
+    <link rel="stylesheet" href="css/master.css">
+    <style>
+        main {
+            width: 1024px;
+        }
+
+        div.parallax {
+            width: 1024px;
+            height: 576px;
+            position: relative;
+
+        }
+
+        div.parallax div.layer8 {
+            width: 1024px;
+            height: 576px;
+            background:  url(img/recursosparallax/layer_08.png) repeat center; 
+            position: absolute;
+            }
+        
+        div.parallax div.layer7 {
+            width: 1024px;
+            height: 576px;
+            background:  url(img/recursosparallax/layer_07.png) repeat center; 
+            position: absolute;
+            animation: animLayer7 70s linear infinite;
+            }
+        
+        div.parallax div.layer6 {
+            width: 1024px;
+            height: 576px;
+            background:  url(img/recursosparallax/layer_06.png) repeat center; 
+            position: absolute;
+            animation: animLayer6 60s linear infinite;
+            }
+        
+        div.parallax div.layer5 {
+            width: 1024px;
+            height: 576px;
+            background:  url(img/recursosparallax/layer_05.png) repeat center; 
+            position: absolute;
+            animation: animLayer5 50s linear infinite;
+            }
+
+        div.parallax div.layer4 {
+            width: 1024px;
+            height: 576px;
+            background:  url(img/recursosparallax/layer_04.png) repeat center; 
+            position: absolute;
+            animation: animLayer4 40s linear infinite;
+            }
+
+        div.parallax div.layer3 {
+            width: 1024px;
+            height: 576px;
+            background:  url(img/recursosparallax/layer_03.png) repeat center; 
+            position: absolute;
+            animation: animLayer3 30s linear infinite;
+            }
+        
+        div.parallax div.layer2 {
+            width: 1024px;
+            height: 576px;
+            background:  url(img/recursosparallax/layer_02.png) repeat center; 
+            position: absolute;
+            animation: animLayer2 20s linear infinite;
+            }
+
+        div.parallax div.layer1 {
+            width: 1024px;
+            height: 576px;
+            background:  url(img/recursosparallax/layer_01.png) repeat center; 
+            position: absolute;
+            animation: animLayer1 10s linear infinite;
+            }
+        
+        div.parallax div.gif {
+            width: 150px;
+            height: 150px;
+            background: url(img/ms.gif) no-repeat center;
+            background-size: contain;
+            position: absolute;
+            margin: 320px 50px;
+            
+        }
+
+        @keyframes animLayer7 {
+            100% {
+                background-position: -2048px;
+            }
+        }
+
+        @keyframes animLayer6 {
+            100% {
+                background-position: -2048px;
+            }
+        }
+
+        @keyframes animLayer5 {
+            100% {
+                background-position: -2048px;
+            }
+        }
+
+        @keyframes animLayer4 {
+            100% {
+                background-position: -2048px;
+            }
+        }
+
+        @keyframes animLayer3 {
+            100% {
+                background-position: -2048px;
+            }
+        }
+
+        @keyframes animLayer2 {
+            100% {
+                background-position: -2048px;
+            }
+        }
+
+        @keyframes animLayer1 {
+            100% {
+                background-position: -2048px;
+            }
+        }
+    
+    </style>
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Parallax</h1>
+        </header>
+        <section>
+            <div class="parallax">
+                <div class="layer8"></div>
+                <div class="layer7"></div>
+                <div class="layer6"></div>
+                <div class="layer5"></div>
+                <div class="layer4"></div>
+                <div class="layer3"></div>
+                <div class="layer2"></div>
+                <div class="layer1"></div>
+                <div class="gif"></div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

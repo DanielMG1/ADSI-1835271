@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Flex (Direction)</title>
+    <style>
+        body{
+            font: 16px Arial;
+            color: #666;
+        }
+        h1{
+            border: 2px solid salmon;
+        }
+        ul.fruits{
+            background-color: #de9083;
+            border-radius: 4px;
+            display: flex;
+            height: 1448px;
+            list-style: none;
+            padding: 0px;
+            margin: 0px 10px;
+        }
+        ul.fruits li{
+            background-color: #c9e1d3;
+            border-radius: 4px;
+            margin: 4px; 
+        }
+        ul.fruits.f1{ flex-direction: row; }
+        ul.fruits.f2{ flex-direction: column; }
+        ul.fruits.f3{ flex-direction: row-reverse; }
+        ul.fruits.f4{ flex-direction: column-reverse; }
+    </style>
+</head>
+<body>
+    <h1>Activar flex-direction: row</h1>
+    <ul class="fruits f1">
+        <li><img src="imgs/grapes.svg"></li>
+        <li><img src="imgs/pear.svg"></li>
+        <li><img src="imgs/orange.svg"></li>
+        <li><img src="imgs/grapes.svg"></li>
+        <li><img src="imgs/pear.svg"></li>
+        <li><img src="imgs/orange.svg"></li>          
+    </ul>
+    <h1>Aactivar flex-direction: row-reverse</h1>
+    <ul class="fruits f2">
+        <li><img src="imgs/grapes.svg"></li>
+        <li><img src="imgs/pear.svg"></li>
+        <li><img src="imgs/orange.svg"></li>
+        <li><img src="imgs/grapes.svg"></li>
+        <li><img src="imgs/pear.svg"></li>
+        <li><img src="imgs/orange.svg"></li>          
+    </ul>
+    <h1>Aactivar flex-direction: column</h1>
+    <ul class="fruits f3">
+        <li><img src="imgs/grapes.svg"></li>
+        <li><img src="imgs/pear.svg"></li>
+        <li><img src="imgs/orange.svg"></li>
+        <li><img src="imgs/grapes.svg"></li>
+        <li><img src="imgs/pear.svg"></li>
+        <li><img src="imgs/orange.svg"></li>          
+    </ul>
+    <h1>Aactivar flex-direction: column-reverse</h1>
+    <ul class="fruits f4">
+        <li><img src="imgs/grapes.svg"></li>
+        <li><img src="imgs/pear.svg"></li>
+        <li><img src="imgs/orange.svg"></li>
+        <li><img src="imgs/grapes.svg"></li>
+        <li><img src="imgs/pear.svg"></li>
+        <li><img src="imgs/orange.svg"></li>          
+    </ul>
+</body>
+</html>

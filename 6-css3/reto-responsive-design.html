@@ -101,7 +101,57 @@
         section.s2 article.img1 {background: url(img/sw_jedi.jpg) no-repeat center; background-size: contain;}
         section.s2 article.img2 {background: url(img/sw_sky.jpeg) no-repeat center; background-size: contain;}
 
+        @media (max-width: 1024px) {
+            section {
+                margin: 20px auto;
+                width: 403px;
+                height: 400px;
+            }
 
+            section.s2 {
+                width: 403px;
+                height: 400px;
+                font-size: 14px;
+            }
+
+            section.s2 article#txt {
+                width: 400px;
+                height: 300px;
+                display: inline-table;
+            }
+            section.s2 article.img {
+            display: inline-block;
+            margin: 17px 120px ;
+            }
+        }
+
+        @media (max-width: 780px) {
+            h1 {
+                inline-size: 3em;
+            }
+
+            section {
+                margin: 20px auto;
+                width: 200px;
+                height: 800px;
+            }
+
+            section.s2 {
+                width: 203px;
+                height: 600px;
+                font-size: 14px;
+            }
+
+            section.s2 article#txt {
+                width: 200px;
+                height: 550px;
+                display: inline-table;
+            }
+            section.s2 article.img {
+            display: inline-block;
+            margin: 17px 15px ;
+            }
+        }
 
 
     </style>

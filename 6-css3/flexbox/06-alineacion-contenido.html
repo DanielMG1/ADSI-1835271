@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Flex (Alinear Contenido)</title>
+    <style>
+        body{
+            font: 16px Arial;
+            color: #666;
+        }
+        h1{
+            border: 2px solid salmon;
+        }
+        ul.fruits{
+            background-color: #de9083;
+            border-radius: 4px;
+            display: flex;
+            height: 448px;
+            list-style: none;
+            padding: 0px;
+            margin: 0px 10px;
+        }
+        ul.fruits li{
+            background-color: #c9e1d3;
+            border-radius: 4px;
+            margin: 4px;
+        }
+        ul.fruits.f1 { align-content: stretch; }
+        ul.fruits.f2 { align-content: flex-start; }
+        ul.fruits.f3 { align-content: flex-end; }
+        ul.fruits.f4 { align-content: center; }
+        ul.fruits.f5 { align-content: space-between; }
+        ul.fruits.f6 { align-content: space-around; }
+
+    </style>
+</head>
+<body>
+    <h1>Activar align-content: stretch; </h1>
+    <ul class="fruits f1">
+        <li><img src="imgs/grapes.svg"></li>
+        <li><img src="imgs/pear.svg"></li>
+        <li><img src="imgs/orange.svg"></li>
+        <li><img src="imgs/grapes.svg"></li>
+        <li><img src="imgs/pear.svg"></li>
+        <li><img src="imgs/orange.svg"></li>          
+    </ul>
+    <h1>Activar align-content: flex-start;</h1>
+    <ul class="fruits f2">
+        <li><img src="imgs/grapes.svg"></li>
+        <li><img src="imgs/pear.svg"></li>
+        <li><img src="imgs/orange.svg"></li>
+        <li><img src="imgs/grapes.svg"></li>
+        <li><img src="imgs/pear.svg"></li>
+        <li><img src="imgs/orange.svg"></li>          
+    </ul>
+    <h1>Aactivar align-content: flex-end; </h1>
+    <ul class="fruits f3">
+        <li><img src="imgs/grapes.svg"></li>
+        <li><img src="imgs/pear.svg"></li>
+        <li><img src="imgs/orange.svg"></li>
+        <li><img src="imgs/grapes.svg"></li>
+        <li><img src="imgs/pear.svg"></li>
+        <li><img src="imgs/orange.svg"></li>          
+    </ul>
+    <h1>Activar align-content: center; </h1>
+    <ul class="fruits f4">
+        <li><img src="imgs/grapes.svg"></li>
+        <li><img src="imgs/pear.svg"></li>
+        <li><img src="imgs/orange.svg"></li>
+        <li><img src="imgs/grapes.svg"></li>
+        <li><img src="imgs/pear.svg"></li>
+        <li><img src="imgs/orange.svg"></li>          
+    </ul>
+    <h1>Activar align-content: space-between; </h1>
+
+    <ul class="fruits f5">
+        <li><img src="imgs/grapes.svg"></li>
+        <li><img src="imgs/pear.svg"></li>
+        <li><img src="imgs/orange.svg"></li>
+        <li><img src="imgs/grapes.svg"></li>
+        <li><img src="imgs/pear.svg"></li>
+        <li><img src="imgs/orange.svg"></li>          
+    </ul>
+
+    <h1>Activar align-content: space-around; </h1>
+
+    <ul class="fruits f6">
+        <li><img src="imgs/grapes.svg"></li>
+        <li><img src="imgs/pear.svg"></li>
+        <li><img src="imgs/orange.svg"></li>
+        <li><img src="imgs/grapes.svg"></li>
+        <li><img src="imgs/pear.svg"></li>
+        <li><img src="imgs/orange.svg"></li>          
+    </ul>
+</body>
+</html>
