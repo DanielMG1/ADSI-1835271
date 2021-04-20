@@ -1,0 +1,268 @@
+section div.calc {
+    background: url(../imgs/calc/fondo.png)no-repeat center;
+    height: 513px;
+    margin: 20px auto;
+    position: relative;
+    width: 303px;
+}
+
+section div.calc.dark {
+    background: url(../imgs/calc/fondo-psic.png)no-repeat center;
+  
+}
+
+section div.calc button#theme {
+    background: transparent url(../imgs/calc/bt-select.png)no-repeat center;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    width: 45px;
+    height: 25px;
+    top: 45px; left:20px ;
+}
+
+section div.calc.dark button#theme {
+    background: transparent url(../imgs/calc/bt-select-psic.png) no-repeat center;
+}
+
+section div.calc output#displayMath {
+    color: rgb(8, 77, 77);
+    text-align: right;
+    position: absolute;
+    top: 90px; right: 25px;
+}
+
+section div.calc output#displayAnswer {
+    color: rgb(8, 77, 77);
+    font-size: 2em;
+    text-align: right;
+    position: absolute;
+    top: 125px; right: 25px;
+
+}
+
+section div.calc ul.buttons {
+    padding: 0px;
+    list-style: none;
+    position: absolute;
+    top: 170px; left: 10px;
+    width: 292px;
+
+}
+
+section div.calc ul.buttons li{
+    background: transparent no-repeat center cover;
+    cursor: pointer;
+    display: inline-block;
+    height: 45px;
+    margin: 0px 11px 0px 0px;
+    width: 58px;
+    transition:  all 0.5S;
+    
+
+}
+
+section div.calc ul.buttons li#btnl {
+    background: transparent url(../imgs/calc/bt-pa.png)no-repeat center;
+    background-size: contain;
+}
+section div.calc.dark ul.buttons li#btnl {
+    background: transparent url(../imgs/calc/bt-pa-psic.png)no-repeat center;
+    background-size: contain;
+}
+
+section div.calc ul.buttons li#btnr {
+    background: transparent url(../imgs/calc/bt-pc.png)no-repeat center;
+    background-size: contain;
+}
+section div.calc.dark ul.buttons li#btnr {
+    background: transparent url(../imgs/calc/bt-pc-psic.png)no-repeat center;
+    background-size: contain;
+}
+
+section div.calc ul.buttons li#btnRaiz {
+    background: transparent url(../imgs/calc/bt-root.png)no-repeat center;
+    background-size: contain;
+}
+section div.calc.dark ul.buttons li#btnRaiz {
+    background: transparent url(../imgs/calc/bt-root-psic.png)no-repeat center;
+    background-size: contain;
+}
+
+section div.calc ul.buttons li#btnX2 {
+    background: transparent url(../imgs/calc/bt-pot.png)no-repeat center;
+    background-size: contain;
+}
+section div.calc.dark ul.buttons li#btnX2 {
+    background: transparent url(../imgs/calc/bt-pot-psic.png)no-repeat center;
+    background-size: contain;
+}
+
+section div.calc ul.buttons li#btnC {
+    background: transparent url(../imgs/calc/bt-prev.png)no-repeat center;
+    background-size: contain;
+}
+
+
+section div.calc ul.buttons li#btnDelete {
+    background: transparent url(../imgs/calc/bt-del.png)no-repeat center;
+    background-size: contain;
+}
+
+section div.calc ul.buttons li#btnAns {
+    background: transparent url(../imgs/calc/bt-ans.png)no-repeat center;
+    background-size: contain;
+}
+section div.calc.dark ul.buttons li#btnAns {
+    background: transparent url(../imgs/calc/bt-ans-psic.png)no-repeat center;
+    background-size: contain;
+}
+
+section div.calc ul.buttons li#btnDiv {
+    background: transparent url(../imgs/calc/bt-div.png)no-repeat center;
+    background-size: contain;
+}
+section div.calc.dark ul.buttons li#btnDiv {
+    background: transparent url(../imgs/calc/bt-div-psic.png)no-repeat center;
+    background-size: contain;
+}
+
+section div.calc ul.buttons li#btn7 {
+    background: transparent url(../imgs/calc/bt-7.png)no-repeat center;
+    background-size: contain;
+}
+section div.calc.dark ul.buttons li#btn7 {
+    background: transparent url(../imgs/calc/bt-7-psic.png)no-repeat center;
+    background-size: contain;
+}
+
+section div.calc ul.buttons li#btn8 {
+    background: transparent url(../imgs/calc/bt-8.png)no-repeat center;
+    background-size: contain;
+}
+section div.calc.dark ul.buttons li#btn8 {
+    background: transparent url(../imgs/calc/bt-8-psic.png)no-repeat center;
+    background-size: contain;
+}
+
+section div.calc ul.buttons li#btn9 {
+    background: transparent url(../imgs/calc/bt-9.png)no-repeat center;
+    background-size: contain;
+}
+section div.calc.dark ul.buttons li#btn9 {
+    background: transparent url(../imgs/calc/bt-9-psic.png)no-repeat center;
+    background-size: contain;
+}
+
+section div.calc ul.buttons li#btnx {
+    background: transparent url(../imgs/calc/bt-mult.png)no-repeat center;
+    background-size: contain;
+}
+section div.calc.dark ul.buttons li#btnx {
+    background: transparent url(../imgs/calc/bt-mult-psic.png)no-repeat center;
+    background-size: contain;
+}
+
+section div.calc ul.buttons li#btn4 {
+    background: transparent url(../imgs/calc/bt-4.png)no-repeat center;
+    background-size: contain;
+}
+section div.calc.dark ul.buttons li#btn4 {
+    background: transparent url(../imgs/calc/bt-4-psic.png)no-repeat center;
+    background-size: contain;
+}
+
+section div.calc ul.buttons li#btn5 {
+    background: transparent url(../imgs/calc/bt-5.png)no-repeat center;
+    background-size: contain;
+}
+section div.calc.dark ul.buttons li#btn5 {
+    background: transparent url(../imgs/calc/bt-5-psic.png)no-repeat center;
+    background-size: contain;
+}
+
+section div.calc ul.buttons li#btn6 {
+    background: transparent url(../imgs/calc/bt-6.png)no-repeat center;
+    background-size: contain;
+}
+section div.calc.dark ul.buttons li#btn6 {
+    background: transparent url(../imgs/calc/bt-6-psic.png)no-repeat center;
+    background-size: contain;
+}
+
+section div.calc ul.buttons li#btn- {
+    background: transparent url(../imgs/calc/bt-res.png)no-repeat center;
+    background-size: contain;
+}
+section div.calc.dark ul.buttons li#btn- {
+    background: transparent url(../imgs/calc/bt-res-psic.png)no-repeat center;
+    background-size: contain;
+}
+
+section div.calc ul.buttons li#btn1 {
+    background: transparent url(../imgs/calc/bt-1.png)no-repeat center;
+    background-size: contain;
+}
+section div.calc.dark ul.buttons li#btn1 {
+    background: transparent url(../imgs/calc/bt-1-psic.png)no-repeat center;
+    background-size: contain;
+}
+
+section div.calc ul.buttons li#btn2 {
+    background: transparent url(../imgs/calc/bt-2.png)no-repeat center;
+    background-size: contain;
+}
+section div.calc.dark ul.buttons li#btn2 {
+    background: transparent url(../imgs/calc/bt-2-psic.png)no-repeat center;
+    background-size: contain;
+}
+
+section div.calc ul.buttons li#btn3 {
+    background: transparent url(../imgs/calc/bt-3.png)no-repeat center;
+    background-size: contain;
+}
+section div.calc.dark ul.buttons li#btn3 {
+    background: transparent url(../imgs/calc/bt-3-psic.png)no-repeat center;
+    background-size: contain;
+}
+
+section div.calc ul.buttons li#btnSum {
+    background: transparent url(../imgs/calc/bt-mas.png)no-repeat center;
+    background-size: contain;
+}
+section div.calc.dark ul.buttons li#btnSum {
+    background: transparent url(../imgs/calc/bt-mas-psic.png)no-repeat center;
+    background-size: contain;
+}
+
+section div.calc ul.buttons li#btnPorc {
+    background: transparent url(../imgs/calc/bt-porc.png)no-repeat center;
+    background-size: contain;
+}
+section div.calc.dark ul.buttons li#btnPorc {
+    background: transparent url(../imgs/calc/bt-porc-psic.png)no-repeat center;
+    background-size: contain;
+}
+
+section div.calc ul.buttons li#btn0 {
+    background: transparent url(../imgs/calc/bt-0.png)no-repeat center;
+    background-size: contain;
+}
+section div.calc.dark ul.buttons li#btn0 {
+    background: transparent url(../imgs/calc/bt-0-psic.png)no-repeat center;
+    background-size: contain;
+}
+
+section div.calc ul.buttons li#btnPunto {
+    background: transparent url(../imgs/calc/bt-pnt.png)no-repeat center;
+    background-size: contain;
+}
+section div.calc.dark ul.buttons li#btnPunto {
+    background: transparent url(../imgs/calc/bt-pnt-psic.png)no-repeat center;
+    background-size: contain;
+}
+
+section div.calc ul.buttons li#btnEqual {
+    background: transparent url(../imgs/calc/bt-equal.png)no-repeat center;
+    background-size: contain;
+}

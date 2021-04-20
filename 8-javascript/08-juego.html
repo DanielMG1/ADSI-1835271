@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FROG CROSSING GAME</title>
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/frog.css">
+</head>
+<body>
+    <main class="game">
+        <header class="title animated bounceInDown delay-1s"> </header>
+        <!-- Screen Home -->
+        <section class="screen screen-home animated bounceInUp">
+            <button id="btn-play"></button>
+            <button id="btn-credits"></button>
+        </section>
+        <!-- Screen play -->
+        <section class="screen screen-play hide">
+            <div id="frog"></div>
+            <ul class="hearts">
+                <li class="heart active"></li>
+                <li class="heart active"></li>
+                <li class="heart active"></li>
+            </ul>
+        </section>
+        <!-- Screen Credits-->
+        <section class="screen screen-credits hide">
+            <button id="back"></button> 
+        </section>
+        <!-- Screen GAME OVER-->
+        <section class="screen screen-game-over hide">
+            <button id="btn-bc"></button>
+        </section>
+        <!-- Screen YOU WIN-->
+        <section class="screen screen-win hide">
+            <button id="btn-bc2"></button>
+        </section>
+        <!-- Sonidos -->
+        <audio id="sound-menu" src="./mp3/bgmenufrog.mp3" autoplay loop="9999"></audio>
+        <audio id="sound-play" src="./mp3/bgplayfrog.mp3" loop="9999"></audio>
+        <audio id="sound-hit" src="./mp3/Copia de Auto Skid 3.mp3" play="1"></audio>
+    </main>
+    <script src="js/frog.js">
+    </script>
+</body>
+</html>

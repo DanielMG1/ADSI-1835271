@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Funciones</title>
+    <link rel="stylesheet" href="css/master.css">
+
+    <style>
+        input, button {
+            margin: 8px auto;
+            display: block;
+            border-radius: 20px;
+            padding: 10px;
+            width: 250px;
+            border: none;
+        }
+
+        button {
+            color: rgba(255,255,255,.8);
+            background-color: rgba(0,0,0,.6);
+            width: 270px;
+            cursor: pointer;
+        }
+
+        table, table td {
+            background-color: rgba(255,255,255,.4);
+            border: 1px solid rgba(0,0,0,.6);
+            border-collapse: collapse;
+            padding: 10px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Funciones JS</h1>
+        </header>
+        <section>
+            <input type="number" id="nf" min="1" max="100" placeholder="Filas">
+            <input type="number" id="nc" min="1" max="100" placeholder="Columnas">
+            <button id="btn" > Generar Tabla</button>
+            <hr>
+            <table id="tbl">
+            </table>
+
+        </section>
+    </main>
+    <script>
+        //Vars
+        var btn = document.getElementById('btn');
+        var tbl = document.getElementById('tbl')
+        //Events
+        btn.onclick = function() {
+            var nf = document.getElementById('nf').value;
+            var nc = document.getElementById('nc').value;
+            if (nf.length > 0 && nc.length > 0) {
+                drawTable(nf,nc);
+            } else {
+                alert("Please fill all inputs");
+            }
+            // functions
+            function drawTable(nf, nc) {
+                var ctbl = "";
+                for (var i = 1; i <= nf; i++){
+                    ctbl += "<tr>";
+                        for (var j = 1; j <= nc; j++) {
+                            ctbl += "<td>"+i+"-c"+j+"-f"+"</td>";
+                        }
+                    ctbl += "</tr>";
+                }
+                tbl.innerHTML = ctbl;
+            }
+        }
+    </script>
+</body>
+</html>

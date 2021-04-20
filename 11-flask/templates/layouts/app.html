@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title> {% block title %}{% endblock %} </title>
+	{{ bootstrap.load_css() }}
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
+</head>
+<body>
+    {% include('layouts/navbar.html') %}
+        <div class="container mt-5">
+            <div class="row">
+                <div class="{% block columns %}{% endblock %}">
+                    {% block content %}
+                    {% endblock %}
+                </div>
+            </div>
+        </div>
+    {{ bootstrap.load_js() }}
+    <script>
+		$(document).ready(function(){
+			$('body').on('click', '.btn-upload', function(event) {
+				event.preventDefault();
+				$('#photo').click();
+			});
+		});
+        function readURL(input) {
+            if(input.files && input.files[0]){
+                var reader = new FileReader();
+                reader.onload = function (e) {
+                    $('.img').attr('src',e.target.result).hide().fadeIn(2000);
+                };
+            reader.readAsDataURL(input.files[0]);
+            }
+        }
+	</script>
+</body>
+</html>

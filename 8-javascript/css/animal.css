@@ -1,0 +1,132 @@
+body {
+    width: 1365px;
+    background: url(../imgs/animal-crossing/pattern-leaves-white.jpg);
+    padding: 0px;
+    margin: 0px auto;
+    height: 4000px;
+}
+
+header {
+    background: url(../imgs/animal-crossing/barra-btn.png) no-repeat center;
+    position: absolute;
+    margin: 0px auto;
+    width: 1365px;
+    height: 87px;
+}
+
+header button {
+    display: inline-block;
+    position: relative;
+    margin-top: 21px;
+    margin-left: 70px;
+    width: 161px;
+    height: 45px;
+    border: none;
+    cursor: pointer;
+}
+header button.btn-inicio {
+    background: url(../imgs/animal-crossing/btn-inicio.png) no-repeat center;
+    margin-left: 250px;
+}
+header button.btn-explora {
+    background: url(../imgs/animal-crossing/btn-explorar.png) no-repeat center;
+}
+header button.btn-crea {
+    background: url(../imgs/animal-crossing/btn-crear.png) no-repeat center;
+}
+header button.btn-comparte {
+    background: url(../imgs/animal-crossing/btn-compartir.png) no-repeat center;
+}
+
+section.title {
+    background: url(../imgs/animal-crossing/title.png) no-repeat center;
+    width: 1365px;
+    height: 725px;
+    position: absolute;
+    margin: 50px auto;
+}
+section.inicio {
+    background: url(../imgs/animal-crossing/bg-inicio.png) no-repeat center;
+    width: 1025px;
+    height: 620px;
+    position: relative;
+    top: 900px;
+    margin: 0px auto;
+}
+section.inicio button.btn-inicio{
+    background: url(../imgs/animal-crossing/btn-inicio2.png) no-repeat center;
+    width: 150px;
+    height: 58px;
+    border: none;
+    position: absolute;
+    top: 410px;
+    left: 740px;
+    cursor: pointer;
+}
+section.explorar {
+    background: url(../imgs/animal-crossing/bg-explorar.png) no-repeat center;
+    width: 1025px;
+    height: 620px;
+    position: relative;
+    top: 900px;
+    margin: 110px auto;
+}
+section.explorar button.btn-explorar{
+    background: url(../imgs/animal-crossing/btn-explorar2.png) no-repeat center;
+    width: 150px;
+    height: 58px;
+    border: none;
+    position: absolute;
+    top: 265px;
+    left: 440px;
+    cursor: pointer;
+
+}
+section.crear {
+    background: url(../imgs/animal-crossing/bg-crear.png) no-repeat center;
+    width: 1025px;
+    height: 620px;
+    position: relative;
+    top: 900px;
+    margin: 110px auto;
+}
+section.crear button.btn-crear{
+    background: url(../imgs/animal-crossing/btn-crear2.png) no-repeat center;
+    width: 150px;
+    height: 58px;
+    border: none;
+    position: absolute;
+    top: 390px;
+    left: 150px;
+    cursor: pointer;
+
+}
+section.compartir {
+    background: url(../imgs/animal-crossing/bg-compartir.png) no-repeat center;
+    width: 1025px;
+    height: 620px;
+    position: relative;
+    top: 900px;
+    margin: 110px auto;
+}
+section.compartir button.btn-compartir{
+    background: url(../imgs/animal-crossing/btn-compartir2.png) no-repeat center;
+    width: 162px;
+    height: 58px;
+    border: none;
+    position: absolute;
+    top: 290px;
+    left: 630px;
+    cursor: pointer;
+
+}
+footer {
+    background: url(../imgs/animal-crossing/footer.png) no-repeat center;
+    width: 1365px;
+    height: 203px;
+    position: relative;
+    top: 900px;
+    margin: 110px auto;
+    margin-bottom: 0px;
+
+}

@@ -1,0 +1,122 @@
+
+
+main.base {
+    background: transparent url(../imgs/car/base.png) no-repeat center;
+    height: 392px;
+    margin: 20px auto;
+    width: 300px;
+}
+
+main.base section.attributes ul {
+    list-style: none;
+    padding: 65px 0px 0px 115px;
+}
+
+main.base section.attributes ul li {
+    color: #000;
+    font: 16px arial;
+    height: 32px;
+    /*border: 1px solid red;*/
+    margin-bottom: 8px;
+
+}
+
+main.base section.methods button {
+    height: 57px;
+    width: 46px;
+    margin: 46px 5px;
+    border: none;
+    transition: all 0.5s;
+}
+
+main.base section.methods button:hover {
+    transform: scale(1.2);
+}
+
+
+main.base section.methods button#btn-on {
+    background: transparent url(../imgs/car/btn-on.png) no-repeat center;
+}
+main.base section.methods button#btn-off {
+    background: transparent url(../imgs/car/btn-off.png) no-repeat center;
+}
+main.base section.methods button#btn-forw {
+    background: transparent url(../imgs/car/btn-forw.png) no-repeat center;
+}
+main.base section.methods button#btn-back {
+    background: transparent url(../imgs/car/btn-back.png) no-repeat center;
+}
+main.base section.methods button#btn-stop {
+    background: transparent url(../imgs/car/btn-stop.png) no-repeat center;
+}
+
+main.base section.methods button#btn-on:hover,
+main.base section.methods button#btn-on:active {
+    background: transparent url(../imgs/car/btnh-on.png) no-repeat center;
+}
+main.base section.methods button#btn-off:hover,
+main.base section.methods button#btn-off:active {
+    background: transparent url(../imgs/car/btnh-off.png) no-repeat center;
+}
+main.base section.methods button#btn-forw:hover,
+main.base section.methods button#btn-forw:active  {
+    background: transparent url(../imgs/car/btnh-forw.png) no-repeat center;
+}
+main.base section.methods button#btn-back:hover, 
+main.base section.methods button#btn-back:active {
+    background: transparent url(../imgs/car/btnh-back.png) no-repeat center;
+}
+main.base section.methods button#btn-stop:hover, 
+main.base section.methods button#btn-stop:active {
+    background: transparent url(../imgs/car/btnh-stop.png) no-repeat center;
+}
+
+main.base section#path {
+    position: relative;
+    left: -500px;
+    width: 300px;
+    height: 200px;
+}
+
+main.base section#path div#vehicle{
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    position: absolute;
+    left: 0px;
+    height: 200px;
+    width: 300px;
+    
+}
+
+/*==================ENCENDER=====================*/
+
+main.base section#path div#vehicle.on {
+    animation: 0.4ms animOn infinite;
+}
+@keyframes animOn {
+    0%,100%{ transform: translateY(0px);}
+    50%{ transform: translateY(-2px);}
+}
+
+/*==================FORWARD=====================*/
+
+main.base section#path.forward {
+    animation: 4s aniForward linear infinite;
+}
+@keyframes aniForward {
+    0% { transform: translateX(0px);}
+    100% { transform: translateX(1400px);}
+}
+
+/*==================BACKWARD=====================*/
+
+main.base section#path.backward {
+    animation: 4s aniBackward linear infinite;
+}
+@keyframes aniBackward {
+    0% { transform: translateX(1400px);}
+    100% { transform: translateX(0px);}
+}
+

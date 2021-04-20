@@ -1,0 +1,7 @@
+{
+  "projects": {
+    "default": "game-frog",
+    "crossing-frog": "crossing-frog",
+    "none": "crossing-frog"
+  }
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<!-- saved from url=(0059)http://127.0.0.1:5500/8-javascript/07-reto-calculadora.html -->
+<html lang="es"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Reto Calculadora</title>
+    <link rel="stylesheet" href="./Reto Calculadora_files/master.css">
+    <link rel="stylesheet" href="./Reto Calculadora_files/calc.css">
+   
+</head>
+<body>
+    <main> 
+        <header>
+            <h1> Reto Calculadora</h1>
+        </header> 
+        <section>
+            <div class="calc">
+
+                <button id="theme"></button>   
+                <output id="displayMath"></output>
+                <output id="displayAnswer">81</output>
+                <ul class="buttons">
+                    <li id="btnl"></li>
+                    <li id="btnr"></li>
+                    <li id="btnRaiz"></li>
+                    <li id="btnX2"></li>
+                    <li id="btnC"></li>
+                    <li id="btnDelete"></li>
+                    <li id="btnAns"></li>
+                    <li id="btnDiv"></li>
+                    <li id="btn7"></li>
+                    <li id="btn8"></li>
+                    <li id="btn9"></li>
+                    <li id="btnx"></li>
+                    <li id="btn4"></li>
+                    <li id="btn5"></li>
+                    <li id="btn6"></li>
+                    <li id="btn-"></li>
+                    <li id="btn1"></li>
+                    <li id="btn2"></li>
+                    <li id="btn3"></li>
+                    <li id="btnSum"></li>
+                    <li id="btnPorc"></li>
+                    <li id="btn0"></li>
+                    <li id="btnPunto"></li>
+                    <li id="btnEqual"></li>
+                </ul>
+            </div>
+
+            
+            
+
+
+
+        </section>
+    </main>
+    <script src="./Reto Calculadora_files/calc.js"> </script>
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body></html>

@@ -1,0 +1,187 @@
+body {
+    background-color: rgb(22, 170, 163);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7) 50%, transparent 0);
+    background-size: 180px 100%;
+    background-position: center;
+}
+main.game {
+    width: 900px;
+    height: 700px;
+    margin: 50px auto;
+    /*border: solid crimson;*/
+}
+main.game header.title {
+    background: url(../imgs/frog/title.png) no-repeat center;
+    width: 620px;
+    height: 65px;
+    margin: 20px auto;
+}
+main.game section.hide {
+    display: none;
+}
+/* Screen inicial */
+main.game section.screen-home{
+    background: url(../imgs/frog/bg-init.png) no-repeat center;
+    height: 543px;
+    margin: 20px auto;
+    width: 801px;
+}
+main.game section.screen-home button,
+main.game section.screen-credits button {
+    /*border: 1px solid red;*/
+    border: none;
+    cursor: pointer;
+    height: 65px;
+    position: absolute;
+    left: 284px;
+    background: transparent;
+    width: 284px;
+}
+main.game section.screen-home button#btn-play {
+    background: url(../imgs/frog/btn-play.png) no-repeat center;
+    margin: 200px auto;
+}
+main.game section.screen-home button#btn-credits {
+    background: url(../imgs/frog/btn-cred.png) no-repeat center;
+    margin: 300px auto;
+}
+main.game section.screen-credits button#back {
+    background: url(../imgs/frog/btn-back.png) no-repeat center;
+    width: 238px;
+    height: 68px;
+    position: relative;
+    left: 230px;
+    top: 450px;
+}
+/* Screen Play */
+main.game section.screen-play {
+    background: url(../imgs/frog/bg.png) no-repeat center;
+    position: relative;
+    margin: 20px auto;
+    overflow: hidden;
+    height: 543px;
+    width: 801px;
+}
+main.game section.screen-play ul.hearts {
+    list-style: none;
+    padding: 0px;
+    position: absolute;
+    margin: 0px;
+    top: 10px; right: 4px;
+    width: 156px;
+    z-index: 3;
+}
+main.game section.screen-play ul.hearts li {
+    display: inline-block;
+    width: 46px;
+    height: 47px;
+}
+main.game section.screen-play ul.hearts li.heart {
+    background: url(../imgs/frog/heart-gray.png) no-repeat center;
+    animation: none;
+}
+main.game section.screen-play ul.hearts li.heart.active {
+    background: url(../imgs/frog/heart.png) no-repeat center;
+    animation: 1s animHearts ease-in infinite;
+}
+@keyframes animHearts {
+    0%,100% {transform: scale(1)}
+    50%     {transform: scale(1.08);}
+}
+/*Rana*/
+main.game section.screen-play div#frog {
+    background: url(../imgs/frog/rana-viva.png) no-repeat center;
+    background-size: contain;
+    height: 58px;
+    width: 56px;
+    position: absolute;
+    left: 372px;
+    top: 482px;
+    /*transition: all 0.1s ease-in;*/
+    z-index: 1;
+}
+/*Carros*/
+main.game section.screen-play div.car{
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 58px;
+    width: 160px;
+    position: absolute;
+    background-size: contain;
+    z-index: 2;
+}
+main.game section.screen-play div.car.car0 {
+    background: url(../imgs/frog/car-2.png) no-repeat center;
+}
+main.game section.screen-play div.car.car1 {
+    background: url(../imgs/frog/car-3.png) no-repeat center;
+}
+main.game section.screen-play div.car.car2 {
+    background: url(../imgs/frog/car-6.png) no-repeat center;
+}
+main.game section.screen-play div.car.car3 {
+    background: url(../imgs/frog/car-1.png) no-repeat center;
+}
+main.game section.screen-play div.car.car4 {
+    background: url(../imgs/frog/car-7.png) no-repeat center;
+}
+main.game section.screen-play div.car.car5 {
+    background: url(../imgs/frog/car-8.png) no-repeat center;
+}
+
+/* Screen Credits */
+main.game section.screen-credits {
+    background: url(../imgs/frog/bg-credits.png) no-repeat center;
+    position: relative;
+    margin: 20px auto;
+    height: 543px;
+    width: 801px;
+}
+
+/* GAME OVER*/
+main.game section.screen-game-over{
+    background: url(../imgs/frog/bg-gameover.png) no-repeat center;
+    position: relative;
+    margin: 20px auto;
+    overflow: hidden;
+    height: 543px;
+    width: 801px;
+}
+main.game section.screen-game-over button{
+    width: 238px;
+    height: 68px;
+    position: relative;
+    left: 270px;
+    cursor: pointer;
+    border: none;
+}
+main.game section.screen-game-over button#btn-bc{
+    background: url('../imgs/frog/btn-tryagain.png') no-repeat center;
+    top: 82%;
+}
+
+/*WIN*/
+main.game section.screen-win{
+    background: url(../imgs/frog/bg-win.png) no-repeat center;
+    position: relative;
+    margin: 20px auto;
+    overflow: hidden;
+    height: 543px;
+    width: 801px;
+}
+main.game section.screen-win button{
+    position: relative;
+    width: 467px;
+    height: 82px;
+    position: absolute;
+    border: none;
+    left: 160px;  
+    cursor: pointer;
+    outline: none;
+}
+main.game section.screen-win button#btn-bc2{
+    background: url('../imgs/frog/btn-playagain.png') no-repeat center;
+    top: 82%;
+}
+
+

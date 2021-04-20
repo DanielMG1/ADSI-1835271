@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Variables JS</title>
+    <link rel="stylesheet" href="css/master.css">
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Variables JS</h1>
+        </header>
+        <section>
+            <lo>
+                <li class="number">23</li>
+                <li class="number">8</li>
+                <li class="number">25</li>
+                <li class="number">3</li>
+            </lo>
+            <h4 id="suma"></h4>
+            <ul>
+                <li>Hola</li>
+                <li>Mundo</li>
+            </ul>
+            <h4 id="msj"></h4>
+            <h4 id="comp"></h4>
+            <h4 id="arr"></h4>
+            <h4 id="obj"></h4>
+        </section>
+    </main>
+    <script>
+        var nums = document.getElementsByClassName('number');
+        var suma = document.getElementById('suma');
+        var msj = document.getElementById('msj');
+        var str = '';
+
+        // Tipo numéricos
+        var res = 0;
+        for(var i = 0; i < nums.length; i++) {
+            res += parseInt(nums[i].textContent);
+        } 
+        suma.innerHTML = "La sura es: "+res;
+
+        // Tipo cadena
+        var strings = document.querySelectorAll('ul li');
+        for(var i = 0; i < strings.length; i++) {
+            str += " " + strings[i].textContent;
+        }
+        msj.innerHTML = "la cadena resultante es: " + str;
+
+        // Tipo Boolean. Se utilzan dos '==' para definir si son iguales, '===' para indicar que tambièn son el mismo dato 
+        var comp = document.getElementById('comp')
+        var bool = (4===9);
+        comp.innerHTML = "El resultado de la comparción es: " + bool; 
+        bool = (15>9);
+        comp.innerHTML = " <br> El resultado de la comparción es: " + bool;
+
+        //Tipo Arreglo
+        var arr = document.getElementById('arr');
+        var dbll = new Array('Goku', 'Bulma', 'Hulon', 'Yamsha', 'Rochi');
+        dbll[5] = 'Krillin'; 
+        arr.innerHTML = dbll;
+
+        //Tipo objeto
+        var obj = document.getElementById('obj');
+        var goku = {
+            power: 99,
+            speed: 85,
+            attack: 70,
+            defense: 30
+        };
+        obj.innerHTML = "El poder de Goku es: " + goku.power;
+        obj.innerHTML = "La velocidad de Goku es: " + goku.speed;
+        obj.innerHTML = "El ataque de Goku es: " + goku.attack;
+        obj.innerHTML = "La defensa de Goku es: " + goku.defense;
+    </script>
+</body>
+</html>
